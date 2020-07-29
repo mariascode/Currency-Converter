@@ -1,0 +1,143 @@
+
+body {
+  display: grid;
+  background-color: #9E8400;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  html, body {
+  background-color: white;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  overflow: hidden;
+  justify-content:center;
+  }
+}
+
+
+.app {
+  background: linear-gradient(to bottom, black 53%, white 47%);
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .app {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background-color: white;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+}
+
+.app form {  
+  max-height: 80vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius:15px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: 1fr 2fr 2fr 1fr 2fr;
+  text-align: center;
+  padding: 2rem;
+  grid-gap:2rem;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+  .app form{
+    background: linear-gradient(to bottom, black 53%, white 47%);
+    display: grid;
+    background-color: white;
+    border-radius: 0px;
+    justify-content:center;
+  }
+} 
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+select {
+  border: 0px;
+  outline: 0px;
+  background-color: inherit;
+}
+.app :is(button, select, textarea) {
+  margin:0;
+  margin-top: 20px;
+  text-align: center;
+  text-align-last:center;
+  font-weight: 600;
+  font-size: 21px;
+  -webkit-appearance: none;
+} 
+
+
+.dark{
+  text-align: center;
+  align-items: center;
+  border-radius: 100px;
+  font-weight: 800;
+  background-color: black;
+  color: white;
+}
+
+
+.darknum{
+  text-align: center;
+  align-items: center;
+  border-radius: 100px;
+  font-size: 40px;
+  font-weight: 800;
+  background-color: black;
+  color: white;
+  border: 0.1px solid #9E8400;
+  height: 60px;
+  margin-top: 40px;
+}
+
+.app :is(button, input, select, textarea):focus {
+  outline-color: #9E8400;
+}
+
+.icon {
+  display: grid;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -60px;
+}
+
+input{
+  justify-self: center;
+  width: 400px;
+}
+@media only screen and (max-width: 1024px) {
+  input{
+    width: 80vw;
+
+  }
+} 
+
+.big{
+  font-size: 45px;
+  font-weight: 950;
+  color: #9E8400;
+}
+
