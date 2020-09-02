@@ -124,10 +124,23 @@ input[type="number"] {
 }
 
 select {
-  border: 0px;
-  outline: 0px;
+  border: 0.1px solid #9E8400;
+  border-radius: 100px;
+  outline: none;
   background-color: inherit;
+  width: 20rem;
+  height: 60px;
 }
+
+
+@media only screen and (min-width: 1024px) {
+  select{
+    width: 25rem;
+
+  }
+} 
+
+
 .app :is(button, select, textarea) {
   margin:0;
   margin-top: 20px;
@@ -148,6 +161,20 @@ select {
   color: white;
 }
 
+label{
+  color: #9E8400;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .darkLabel{
+    margin-top: 2.5rem;
+  }
+} 
+
+.darkLabel{
+  margin-top: 1rem;
+}
 
 .darknum{
   text-align: center;
@@ -159,7 +186,7 @@ select {
   color: white;
   border: 0.1px solid #9E8400;
   height: 60px;
-  margin-top: 40px;
+  margin-top: 18px;
 }
 
 .app :is(button, input, select, textarea):focus {
@@ -171,19 +198,29 @@ select {
   width: 150px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -60px;
+  margin-top: -3.2rem;
+  margin-bottom: -50px;
 }
+
+@media only screen and (min-width: 1024px) {
+  .icon{
+  margin-bottom: -50px;
+  }
+} 
 
 input{
   justify-self: center;
-  width: 400px;
+  width: 20rem;
 }
-@media only screen and (max-width: 1024px) {
+
+
+@media only screen and (min-width: 1024px) {
   input{
-    width: 80vw;
+    width: 25rem;
 
   }
 } 
+
 
 .big{
   font-size: 45px;
