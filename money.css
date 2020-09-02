@@ -192,4 +192,6 @@ input{
 }
 
 .label{
-  display:none;}
+  font-size: 0px;
+  display:none !important;
+}
