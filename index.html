@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Currency Converter">
   <title>Currency Converter</title>
   <link rel="stylesheet" href="./money.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
@@ -12,14 +13,21 @@
 <body>
   <div class="app">
     <form> 
-      <select class="dark" name="from_currency">
+     
+      <select class="dark" name="from_currency"> 
+       <label>
         <option class="dark" class="from_currency">Select a Currency</option>
+      </label>
       </select>
+      <label>
       <input class="darknum" type="number" name="from_amount" value="100" >
+    </label>
 <img src="https://image.flaticon.com/icons/svg/25/25224.svg" class="icon" alt="Arrow down"></img>
-      <select name="to_currency">
+     
+<select name="to_currency">
+  <label>
       <option>Select a Currency</option> 
-    
+    </label>
       </select>
       <p class="to_amount big"  >$0</p>
     </form>
